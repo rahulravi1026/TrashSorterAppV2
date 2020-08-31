@@ -23,6 +23,8 @@ class HomeViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
 //    static var recyclingClicked: Bool = false
 //    static var compostClicked: Bool = false
     let db = Firestore.firestore()
+    var type = ""
+    var sortedName = ""
     private var imageData:CollectionReference!
     var previewLayer:CALayer!
     
@@ -34,6 +36,8 @@ class HomeViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        overrideUserInterfaceStyle = .dark
 
         // Do any additional setup after loading the view.
         setUpElements()
@@ -49,6 +53,8 @@ class HomeViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
         
     }
     
+    
+    
     func prepareCamera() {
         captureSession.sessionPreset = AVCaptureSession.Preset.photo
         
@@ -57,6 +63,18 @@ class HomeViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
             beginSession()
         }
     }
+    
+    func convertToDictionary(text: String) -> [String: Any]? {
+        if let data = text.data(using: .utf8) {
+            do {
+                return try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        return nil
+    }
+    
     
     func beginSession() {
         do {
@@ -94,6 +112,7 @@ class HomeViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
     @IBAction func takePhoto(_ sender: Any) {
         takePhoto = true
     }
+    @IBOutlet weak var typeLabel: UILabel?
     
     func randomString(length: Int) -> String {
       let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
@@ -103,7 +122,7 @@ class HomeViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         if takePhoto {
             takePhoto = false
-            
+
             if let image = self.getImageFromSampleBuffer(buffer: sampleBuffer) {
                 
                 DispatchQueue.main.async {
@@ -133,8 +152,9 @@ class HomeViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
                         }
                         
                     }
+
+                    let url = URL(string: "https://us-central1-trashsorterappv2.cloudfunctions.net/classify?image=" + "https://storage.googleapis.com/trashsorterappv2.appspot.com/images/" + randString + ".jpg")
                     
-                    let url = URL(string: "https://us-central1-trashsorterappv2.cloudfunctions.net/classify?image=" + "https://storage.cloud.google.com/trashsorterappv2.appspot.com/images/" + randString + ".jpg")
                     
                     guard let requestUrl = url else { fatalError() }
                     // Create URL Request
@@ -155,8 +175,26 @@ class HomeViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
                       // Convert HTTP Response Data to a simple String
                       if let data = data, let dataString = String(data: data, encoding: .utf8) {
                         print("Response data string:\n \(dataString)")
+                        let char = String(dataString[dataString.index(dataString.startIndex, offsetBy: 19)])
+                        let char1 = String(dataString[dataString.index(dataString.startIndex, offsetBy: 20)])
+                        self.type = char + char1
+                        if self.type == "tr" {
+                            self.sortedName = "This goes in the Trash"
+                        }
+                        else {
+                            self.sortedName = "This goes in Recycling"
+                        }
+                        
+                        print(self.sortedName)
+                        DispatchQueue.main.async {
+                            self.typeLabel?.text = self.sortedName
+                        }
                       }
+                        
+                        
                     }
+                    
+                    task.resume()
                     
 //                    guard let data = image.jpegData(compressionQuality: 1.0) else { return }
 //
@@ -187,6 +225,7 @@ class HomeViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
 //                        }
 //                    }
                     
+                    
                     self.present(photoVC, animated: true, completion: nil)
                 }
             }
@@ -208,7 +247,14 @@ class HomeViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
         return nil
     }
     
-    
+    override open var shouldAutorotate: Bool {
+       return false
+    }
+
+    // Specify the orientation.
+    override open var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+       return .portrait
+    }
     
 
     /*

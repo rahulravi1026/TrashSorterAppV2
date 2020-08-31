@@ -17,6 +17,8 @@ class PhotoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        overrideUserInterfaceStyle = .dark
+        
         if let availableImage = takenPhoto {
             imageView.image = availableImage
         }
@@ -28,6 +30,14 @@ class PhotoViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+    override open var shouldAutorotate: Bool {
+       return false
+    }
+
+    // Specify the orientation.
+    override open var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+       return .portrait
+    }
 
     /*
     // MARK: - Navigation

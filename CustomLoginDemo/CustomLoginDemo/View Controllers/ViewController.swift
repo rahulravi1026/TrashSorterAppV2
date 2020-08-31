@@ -21,6 +21,8 @@ class ViewController: UIViewController {
         
         setUpElements()
         navigationController?.isNavigationBarHidden = false
+        
+        overrideUserInterfaceStyle = .dark
     }
     
     /*
@@ -40,7 +42,14 @@ class ViewController: UIViewController {
     }
  
  
-    
+    override open var shouldAutorotate: Bool {
+       return false
+    }
+
+    // Specify the orientation.
+    override open var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+       return .portrait
+    }
  
 
 }

@@ -21,12 +21,22 @@ class NavigationHomeViewController: UIViewController {
         setUpElements()
         navigationController?.isNavigationBarHidden = false
         
+        overrideUserInterfaceStyle = .dark
     }
     
     func setUpElements() {
         // Style the elements
        
         
+    }
+    
+    override open var shouldAutorotate: Bool {
+       return false
+    }
+
+    // Specify the orientation.
+    override open var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+       return .portrait
     }
 
 }

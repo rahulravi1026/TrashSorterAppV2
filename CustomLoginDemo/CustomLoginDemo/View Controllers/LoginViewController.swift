@@ -26,6 +26,8 @@ class LoginViewController: UIViewController {
         
         setUpElements()
         navigationController?.isNavigationBarHidden = false
+        
+        overrideUserInterfaceStyle = .dark
     }
     
     func setUpElements() {
@@ -40,6 +42,15 @@ class LoginViewController: UIViewController {
         
     }
     
+    
+    override open var shouldAutorotate: Bool {
+       return false
+    }
+
+    // Specify the orientation.
+    override open var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+       return .portrait
+    }
     
     
     
