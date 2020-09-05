@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#import "FirebaseStorage/Sources/Public/FIRStorageListResult.h"
+#import <FirebaseStorage/FIRStorageListResult.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		252866207557434F3E6B6579 /* Pods_TrashSorterAppTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AC2E95F8BB8EC73A46F1B5 /* Pods_TrashSorterAppTest.framework */; };
 		3519E79224BECF7000BE29E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3519E79124BECF7000BE29E8 /* GoogleService-Info.plist */; };
 		830C3D8F22E7523E001FA4E7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830C3D8E22E7523E001FA4E7 /* Constants.swift */; };
 		830C3D9222E755F6001FA4E7 /* loginbg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 830C3D9122E755F6001FA4E7 /* loginbg.mp4 */; };
@@ -24,11 +23,12 @@
 		920B75D724D61657003C1D09 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920B75D624D61657003C1D09 /* PhotoViewController.swift */; };
 		928EF28124D0FCE4002F223C /* NavigationHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928EF28024D0FCE4002F223C /* NavigationHomeViewController.swift */; };
 		92A610D124D6306C00158259 /* transparentlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A610D024D6306C00158259 /* transparentlogo.png */; };
+		B8B8B7C5DDB3B55691B9A0EA /* Pods_TrashSorterAppTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 894F7E3AAEC322F37459FAD4 /* Pods_TrashSorterAppTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		196F9479543E5B135BF0C70E /* Pods-TrashSorterAppTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrashSorterAppTest.debug.xcconfig"; path = "Target Support Files/Pods-TrashSorterAppTest/Pods-TrashSorterAppTest.debug.xcconfig"; sourceTree = "<group>"; };
 		3519E79124BECF7000BE29E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6BAEA631018B8F1D76B34A49 /* Pods-TrashSorterAppTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrashSorterAppTest.debug.xcconfig"; path = "Target Support Files/Pods-TrashSorterAppTest/Pods-TrashSorterAppTest.debug.xcconfig"; sourceTree = "<group>"; };
 		830C3D8E22E7523E001FA4E7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		830C3D9122E755F6001FA4E7 /* loginbg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginbg.mp4; sourceTree = "<group>"; };
 		8314D42F22E644CC001D044A /* Trash Sorter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trash Sorter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,11 +43,11 @@
 		8314D44822E64520001D044A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8314D44A22E6452C001D044A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8397D20D22E64A7500CB78DD /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		894F7E3AAEC322F37459FAD4 /* Pods_TrashSorterAppTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrashSorterAppTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		920B75D624D61657003C1D09 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		928EF28024D0FCE4002F223C /* NavigationHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationHomeViewController.swift; path = CustomLoginDemo/NavigationHomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		92A610D024D6306C00158259 /* transparentlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparentlogo.png; sourceTree = "<group>"; };
-		AC5185CC07F3EA704B71A8ED /* Pods-TrashSorterAppTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrashSorterAppTest.release.xcconfig"; path = "Target Support Files/Pods-TrashSorterAppTest/Pods-TrashSorterAppTest.release.xcconfig"; sourceTree = "<group>"; };
-		D0AC2E95F8BB8EC73A46F1B5 /* Pods_TrashSorterAppTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrashSorterAppTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F0B0F5F59E3E007ACFD1C2 /* Pods-TrashSorterAppTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrashSorterAppTest.release.xcconfig"; path = "Target Support Files/Pods-TrashSorterAppTest/Pods-TrashSorterAppTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				252866207557434F3E6B6579 /* Pods_TrashSorterAppTest.framework in Frameworks */,
+				B8B8B7C5DDB3B55691B9A0EA /* Pods_TrashSorterAppTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,10 +65,18 @@
 		256061AB78805D7F9BD3C3ED /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				196F9479543E5B135BF0C70E /* Pods-TrashSorterAppTest.debug.xcconfig */,
-				AC5185CC07F3EA704B71A8ED /* Pods-TrashSorterAppTest.release.xcconfig */,
+				6BAEA631018B8F1D76B34A49 /* Pods-TrashSorterAppTest.debug.xcconfig */,
+				B3F0B0F5F59E3E007ACFD1C2 /* Pods-TrashSorterAppTest.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		26EDB8C3994AB75659B0AF4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				894F7E3AAEC322F37459FAD4 /* Pods_TrashSorterAppTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		830C3D9022E755DB001FA4E7 /* Media */ = {
@@ -86,7 +94,7 @@
 				8314D43122E644CC001D044A /* CustomLoginDemo */,
 				8314D43022E644CC001D044A /* Products */,
 				256061AB78805D7F9BD3C3ED /* Pods */,
-				E7063B807B7D697FCD7426D3 /* Frameworks */,
+				26EDB8C3994AB75659B0AF4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,14 +145,6 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		E7063B807B7D697FCD7426D3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D0AC2E95F8BB8EC73A46F1B5 /* Pods_TrashSorterAppTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,11 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8314D44322E644CD001D044A /* Build configuration list for PBXNativeTarget "TrashSorterAppTest" */;
 			buildPhases = (
-				6F9DC6E1EE116F2F5B113CB9 /* [CP] Check Pods Manifest.lock */,
+				C2FB7672F6EC235A9A464FA3 /* [CP] Check Pods Manifest.lock */,
 				8314D42B22E644CC001D044A /* Sources */,
 				8314D42C22E644CC001D044A /* Frameworks */,
 				8314D42D22E644CC001D044A /* Resources */,
-				19964AC4A5FB844ED2175392 /* [CP] Embed Pods Frameworks */,
+				355B27C19CD9BF2985C124D3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,7 +217,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		19964AC4A5FB844ED2175392 /* [CP] Embed Pods Frameworks */ = {
+		355B27C19CD9BF2985C124D3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -234,7 +234,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrashSorterAppTest/Pods-TrashSorterAppTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6F9DC6E1EE116F2F5B113CB9 /* [CP] Check Pods Manifest.lock */ = {
+		C2FB7672F6EC235A9A464FA3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -414,7 +414,7 @@
 		};
 		8314D44422E644CD001D044A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 196F9479543E5B135BF0C70E /* Pods-TrashSorterAppTest.debug.xcconfig */;
+			baseConfigurationReference = 6BAEA631018B8F1D76B34A49 /* Pods-TrashSorterAppTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -434,7 +434,7 @@
 		};
 		8314D44522E644CD001D044A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC5185CC07F3EA704B71A8ED /* Pods-TrashSorterAppTest.release.xcconfig */;
+			baseConfigurationReference = B3F0B0F5F59E3E007ACFD1C2 /* Pods-TrashSorterAppTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
