@@ -13,21 +13,21 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.rahulravi.TrashSorterAppTest</string>
+	<string>com.team5773.TrashSorterAppTest</string>
 	<key>PROJECT_ID</key>
 	<string>trashsorterappv2</string>
 	<key>STORAGE_BUCKET</key>
 	<string>trashsorterappv2.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:157652902816:ios:899fddaa1bf8387a733ac5</string>
 	<key>DATABASE_URL</key>

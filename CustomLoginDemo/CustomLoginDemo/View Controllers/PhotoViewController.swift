@@ -14,6 +14,7 @@ class PhotoViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,6 +26,8 @@ class PhotoViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    
     
     @IBAction func goBack(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-#import "FirebaseInstallations/Source/Library/Errors/FIRInstallationsErrorUtil.h"
+#import "FIRInstallationsErrorUtil.h"
 
-#import "FirebaseInstallations/Source/Library/Errors/FIRInstallationsHTTPError.h"
+#import "FIRInstallationsHTTPError.h"
 
 NSString *const kFirebaseInstallationsErrorDomain = @"com.firebase.installations";
 

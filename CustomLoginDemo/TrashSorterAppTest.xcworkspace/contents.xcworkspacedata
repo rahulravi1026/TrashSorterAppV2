@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/rahulravi/Dropbox/My Mac (Rahul’s MacBook Air)/Downloads/CustomLoginDemo 3/TrashSorterAppTest.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
    <FileRef
