@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		252866207557434F3E6B6579 /* Pods_TrashSorterAppTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AC2E95F8BB8EC73A46F1B5 /* Pods_TrashSorterAppTest.framework */; };
 		3519E79224BECF7000BE29E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3519E79124BECF7000BE29E8 /* GoogleService-Info.plist */; };
+		35962B2225043C320085619B /* SortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35962B2125043C320085619B /* SortViewController.swift */; };
+		35962B2425043C400085619B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35962B2325043C400085619B /* ProfileViewController.swift */; };
+		35F8170325042A450008E4CE /* ForgotPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F8170225042A450008E4CE /* ForgotPassViewController.swift */; };
+		80211EC792A69251BB176BBE /* Pods_TrashSorterAppTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84474114D3AD9AE32D0AEA9B /* Pods_TrashSorterAppTest.framework */; };
 		830C3D8F22E7523E001FA4E7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830C3D8E22E7523E001FA4E7 /* Constants.swift */; };
 		830C3D9222E755F6001FA4E7 /* loginbg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 830C3D9122E755F6001FA4E7 /* loginbg.mp4 */; };
 		8314D43322E644CC001D044A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314D43222E644CC001D044A /* AppDelegate.swift */; };
@@ -27,8 +30,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		196F9479543E5B135BF0C70E /* Pods-TrashSorterAppTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrashSorterAppTest.debug.xcconfig"; path = "Target Support Files/Pods-TrashSorterAppTest/Pods-TrashSorterAppTest.debug.xcconfig"; sourceTree = "<group>"; };
 		3519E79124BECF7000BE29E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		35962B2125043C320085619B /* SortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortViewController.swift; sourceTree = "<group>"; };
+		35962B2325043C400085619B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		35F8170225042A450008E4CE /* ForgotPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassViewController.swift; sourceTree = "<group>"; };
+		57865F0BFF8F76923D8534C5 /* Pods-TrashSorterAppTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrashSorterAppTest.debug.xcconfig"; path = "Target Support Files/Pods-TrashSorterAppTest/Pods-TrashSorterAppTest.debug.xcconfig"; sourceTree = "<group>"; };
 		830C3D8E22E7523E001FA4E7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		830C3D9122E755F6001FA4E7 /* loginbg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginbg.mp4; sourceTree = "<group>"; };
 		8314D42F22E644CC001D044A /* Trash Sorter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trash Sorter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,11 +49,11 @@
 		8314D44822E64520001D044A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8314D44A22E6452C001D044A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8397D20D22E64A7500CB78DD /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		84474114D3AD9AE32D0AEA9B /* Pods_TrashSorterAppTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrashSorterAppTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		920B75D624D61657003C1D09 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		928EF28024D0FCE4002F223C /* NavigationHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationHomeViewController.swift; path = CustomLoginDemo/NavigationHomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		92A610D024D6306C00158259 /* transparentlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparentlogo.png; sourceTree = "<group>"; };
-		AC5185CC07F3EA704B71A8ED /* Pods-TrashSorterAppTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrashSorterAppTest.release.xcconfig"; path = "Target Support Files/Pods-TrashSorterAppTest/Pods-TrashSorterAppTest.release.xcconfig"; sourceTree = "<group>"; };
-		D0AC2E95F8BB8EC73A46F1B5 /* Pods_TrashSorterAppTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrashSorterAppTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9866AC1FF61EE0B3412B1166 /* Pods-TrashSorterAppTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrashSorterAppTest.release.xcconfig"; path = "Target Support Files/Pods-TrashSorterAppTest/Pods-TrashSorterAppTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				252866207557434F3E6B6579 /* Pods_TrashSorterAppTest.framework in Frameworks */,
+				80211EC792A69251BB176BBE /* Pods_TrashSorterAppTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,8 +71,8 @@
 		256061AB78805D7F9BD3C3ED /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				196F9479543E5B135BF0C70E /* Pods-TrashSorterAppTest.debug.xcconfig */,
-				AC5185CC07F3EA704B71A8ED /* Pods-TrashSorterAppTest.release.xcconfig */,
+				57865F0BFF8F76923D8534C5 /* Pods-TrashSorterAppTest.debug.xcconfig */,
+				9866AC1FF61EE0B3412B1166 /* Pods-TrashSorterAppTest.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -86,7 +92,7 @@
 				8314D43122E644CC001D044A /* CustomLoginDemo */,
 				8314D43022E644CC001D044A /* Products */,
 				256061AB78805D7F9BD3C3ED /* Pods */,
-				E7063B807B7D697FCD7426D3 /* Frameworks */,
+				D895038CDD5F24E2E4DB2724 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +130,9 @@
 				8314D44A22E6452C001D044A /* HomeViewController.swift */,
 				8314D43622E644CC001D044A /* ViewController.swift */,
 				920B75D624D61657003C1D09 /* PhotoViewController.swift */,
+				35F8170225042A450008E4CE /* ForgotPassViewController.swift */,
+				35962B2125043C320085619B /* SortViewController.swift */,
+				35962B2325043C400085619B /* ProfileViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -137,10 +146,10 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		E7063B807B7D697FCD7426D3 /* Frameworks */ = {
+		D895038CDD5F24E2E4DB2724 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D0AC2E95F8BB8EC73A46F1B5 /* Pods_TrashSorterAppTest.framework */,
+				84474114D3AD9AE32D0AEA9B /* Pods_TrashSorterAppTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,11 +161,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8314D44322E644CD001D044A /* Build configuration list for PBXNativeTarget "TrashSorterAppTest" */;
 			buildPhases = (
-				6F9DC6E1EE116F2F5B113CB9 /* [CP] Check Pods Manifest.lock */,
+				D6929EE0DC4CCF7A1C857F63 /* [CP] Check Pods Manifest.lock */,
 				8314D42B22E644CC001D044A /* Sources */,
 				8314D42C22E644CC001D044A /* Frameworks */,
 				8314D42D22E644CC001D044A /* Resources */,
-				19964AC4A5FB844ED2175392 /* [CP] Embed Pods Frameworks */,
+				7FE166FED9DA6D60AE13F5B6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,7 +226,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		19964AC4A5FB844ED2175392 /* [CP] Embed Pods Frameworks */ = {
+		7FE166FED9DA6D60AE13F5B6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -234,7 +243,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrashSorterAppTest/Pods-TrashSorterAppTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6F9DC6E1EE116F2F5B113CB9 /* [CP] Check Pods Manifest.lock */ = {
+		D6929EE0DC4CCF7A1C857F63 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -265,6 +274,7 @@
 			files = (
 				8314D43722E644CC001D044A /* ViewController.swift in Sources */,
 				8314D43322E644CC001D044A /* AppDelegate.swift in Sources */,
+				35962B2225043C320085619B /* SortViewController.swift in Sources */,
 				8397D20E22E64A7500CB78DD /* Utilities.swift in Sources */,
 				8314D44722E64515001D044A /* SignUpViewController.swift in Sources */,
 				928EF28124D0FCE4002F223C /* NavigationHomeViewController.swift in Sources */,
@@ -272,6 +282,8 @@
 				8314D43522E644CC001D044A /* SceneDelegate.swift in Sources */,
 				8314D44B22E6452C001D044A /* HomeViewController.swift in Sources */,
 				830C3D8F22E7523E001FA4E7 /* Constants.swift in Sources */,
+				35962B2425043C400085619B /* ProfileViewController.swift in Sources */,
+				35F8170325042A450008E4CE /* ForgotPassViewController.swift in Sources */,
 				920B75D724D61657003C1D09 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,18 +426,18 @@
 		};
 		8314D44422E644CD001D044A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 196F9479543E5B135BF0C70E /* Pods-TrashSorterAppTest.debug.xcconfig */;
+			baseConfigurationReference = 57865F0BFF8F76923D8534C5 /* Pods-TrashSorterAppTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8789U64S4Y;
+				DEVELOPMENT_TEAM = 88LXW327J8;
 				INFOPLIST_FILE = CustomLoginDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rahulravi.TrashSorterAppTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.team5773.TrashSorterAppTest;
 				PRODUCT_NAME = "Trash Sorter";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -434,18 +446,18 @@
 		};
 		8314D44522E644CD001D044A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC5185CC07F3EA704B71A8ED /* Pods-TrashSorterAppTest.release.xcconfig */;
+			baseConfigurationReference = 9866AC1FF61EE0B3412B1166 /* Pods-TrashSorterAppTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8789U64S4Y;
+				DEVELOPMENT_TEAM = 88LXW327J8;
 				INFOPLIST_FILE = CustomLoginDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rahulravi.TrashSorterAppTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.team5773.TrashSorterAppTest;
 				PRODUCT_NAME = "Trash Sorter";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -16,14 +16,9 @@
 
 #import "FirebaseAuth/Sources/Backend/FIRAuthBackend.h"
 
-#if SWIFT_PACKAGE
-@import GTMSessionFetcherCore;
-#else
+#import <FirebaseAuth/FirebaseAuth.h>
 #import <GTMSessionFetcher/GTMSessionFetcher.h>
 #import <GTMSessionFetcher/GTMSessionFetcherService.h>
-#endif
-
-#import "FirebaseAuth/Sources/Public/FirebaseAuth.h"
 
 #import "FirebaseAuth/Sources/Auth/FIRAuthGlobalWorkQueue.h"
 #import "FirebaseAuth/Sources/AuthProvider/OAuth/FIROAuthCredential_Internal.h"
@@ -64,7 +59,7 @@
 #import "FirebaseAuth/Sources/Utilities/FIRAuthErrorUtils.h"
 
 #if TARGET_OS_IOS
-#import "FirebaseAuth/Sources/Public/FIRPhoneAuthProvider.h"
+#import <FirebaseAuth/FIRPhoneAuthProvider.h>
 
 #import "FirebaseAuth/Sources/AuthProvider/Phone/FIRPhoneAuthCredential_Internal.h"
 #import "FirebaseAuth/Sources/MultiFactor/Phone/FIRPhoneMultiFactorInfo+Internal.h"

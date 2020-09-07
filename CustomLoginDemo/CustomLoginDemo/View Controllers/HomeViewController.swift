@@ -102,7 +102,7 @@ class HomeViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
         
         captureSession.commitConfiguration()
         
-        let queue = DispatchQueue(label: "com.aryanvaswani.captureQueue")
+        let queue = DispatchQueue(label: "com.team5773.captureQueue")
         dataOutput.setSampleBufferDelegate(self, queue: queue)
         
         
@@ -180,9 +180,41 @@ class HomeViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
                         self.type = char + char1
                         if self.type == "tr" {
                             self.sortedName = "This goes in the Trash"
+                            let user = Auth.auth().currentUser
+                                   if let user = user {
+                                       let currentUID = user.uid
+                                    self.db.collection("users").whereField("uid", isEqualTo: currentUID).getDocuments { (querySnapshot, error) in
+                                           if let error = error {
+                                               print("Error getting documents: \(error)")
+                                           }
+                                           else {
+                                               for document in querySnapshot!.documents {
+                                                   print("\(document.documentID) => \(document.data())")
+                                                   self.db.collection("users").document(document.documentID).updateData(["numLandfill" : FieldValue.increment(Int64(1))]) { (error) in
+                                                   }
+                                               }
+                                           }
+                                       }
+                                   }
                         }
                         else {
                             self.sortedName = "This goes in Recycling"
+                            let user = Auth.auth().currentUser
+                                   if let user = user {
+                                       let currentUID = user.uid
+                                    self.db.collection("users").whereField("uid", isEqualTo: currentUID).getDocuments { (querySnapshot, error) in
+                                           if let error = error {
+                                               print("Error getting documents: \(error)")
+                                           }
+                                           else {
+                                               for document in querySnapshot!.documents {
+                                                   print("\(document.documentID) => \(document.data())")
+                                                   self.db.collection("users").document(document.documentID).updateData(["numRecycling" : FieldValue.increment(Int64(1))]) { (error) in
+                                                   }
+                                               }
+                                           }
+                                       }
+                                   }
                         }
                         
                         print(self.sortedName)
@@ -209,7 +241,7 @@ class HomeViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
 //                                for document in querySnapshot!.documents {
 //                                    print("\(document.documentID) => \(document.data())")
 //                                    self.db.collection("users").document(document.documentID).updateData(["takenImage" : data])
-//                                    { (error) in
+//                                  { (error) in
 //                                    }
 //                                    self.imageData = self.db.collection("users")
 //                                    self.imageData.getDocuments{(snapshot, error) in
@@ -226,7 +258,7 @@ class HomeViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
 //                    }
                     
                     
-                    self.present(photoVC, animated: true, completion: nil)
+                   self.present(photoVC, animated: true, completion: nil)
                 }
             }
         }
