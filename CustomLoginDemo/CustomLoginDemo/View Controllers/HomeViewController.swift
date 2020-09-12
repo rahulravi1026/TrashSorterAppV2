@@ -36,7 +36,7 @@ class HomeViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         overrideUserInterfaceStyle = .dark
 
         // Do any additional setup after loading the view.
@@ -47,10 +47,6 @@ class HomeViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
     
     func setUpElements() {
         // Style the elements
-//        Utilities.styleFilledButton(landfillButton)
-//        Utilities.styleFilledButton(recyclingButton)
-//        Utilities.styleFilledButton(compostButton)
-        
     }
     
     
@@ -108,11 +104,11 @@ class HomeViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
         
     }
     
-    
     @IBAction func takePhoto(_ sender: Any) {
         takePhoto = true
     }
-    @IBOutlet weak var typeLabel: UILabel?
+    
+    @IBOutlet weak var typeLabel: UILabel!
     
     func randomString(length: Int) -> String {
       let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"

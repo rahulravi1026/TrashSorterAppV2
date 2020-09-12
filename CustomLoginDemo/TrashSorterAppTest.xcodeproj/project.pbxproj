@@ -27,6 +27,7 @@
 		920B75D724D61657003C1D09 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920B75D624D61657003C1D09 /* PhotoViewController.swift */; };
 		928EF28124D0FCE4002F223C /* NavigationHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928EF28024D0FCE4002F223C /* NavigationHomeViewController.swift */; };
 		92A610D124D6306C00158259 /* transparentlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A610D024D6306C00158259 /* transparentlogo.png */; };
+		92DE582C250C817400A9BF36 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DE582B250C817400A9BF36 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		920B75D624D61657003C1D09 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		928EF28024D0FCE4002F223C /* NavigationHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationHomeViewController.swift; path = CustomLoginDemo/NavigationHomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		92A610D024D6306C00158259 /* transparentlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparentlogo.png; sourceTree = "<group>"; };
+		92DE582B250C817400A9BF36 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = CustomLoginDemo/TabBarController.swift; sourceTree = SOURCE_ROOT; };
 		9866AC1FF61EE0B3412B1166 /* Pods-TrashSorterAppTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrashSorterAppTest.release.xcconfig"; path = "Target Support Files/Pods-TrashSorterAppTest/Pods-TrashSorterAppTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +126,7 @@
 		8314D44C22E64531001D044A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				92DE582B250C817400A9BF36 /* TabBarController.swift */,
 				928EF28024D0FCE4002F223C /* NavigationHomeViewController.swift */,
 				8314D44622E64515001D044A /* SignUpViewController.swift */,
 				8314D44822E64520001D044A /* LoginViewController.swift */,
@@ -283,6 +286,7 @@
 				8314D44B22E6452C001D044A /* HomeViewController.swift in Sources */,
 				830C3D8F22E7523E001FA4E7 /* Constants.swift in Sources */,
 				35962B2425043C400085619B /* ProfileViewController.swift in Sources */,
+				92DE582C250C817400A9BF36 /* TabBarController.swift in Sources */,
 				35F8170325042A450008E4CE /* ForgotPassViewController.swift in Sources */,
 				920B75D724D61657003C1D09 /* PhotoViewController.swift in Sources */,
 			);
