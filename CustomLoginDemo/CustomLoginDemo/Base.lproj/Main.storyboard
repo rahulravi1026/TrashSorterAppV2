@@ -377,7 +377,7 @@
         <!--Photo View Controller-->
         <scene sceneID="Ww0-uO-4Zn">
             <objects>
-                <viewController storyboardIdentifier="PhotoVC" id="9at-qu-bC6" customClass="PhotoViewController" customModule="Trash_Sorter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PhotoVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9at-qu-bC6" customClass="PhotoViewController" customModule="Trash_Sorter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Iy1-hC-VaN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
